@@ -1,0 +1,6 @@
+/* Node.js Course Page Styles */
+@import './CoursePageShared.css';
+
+.nodejs-course-page {
+  padding-top: 120px;
+}

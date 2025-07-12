@@ -1,0 +1,6 @@
+/* UI/UX Course Page Styles */
+@import './CoursePageShared.css';
+
+.uiux-course-page {
+  padding-top: 120px;
+}

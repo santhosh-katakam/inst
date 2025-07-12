@@ -1,0 +1,6 @@
+/* Angular Course Page Styles */
+@import './CoursePageShared.css';
+
+.angular-course-page {
+  padding-top: 120px;
+}

@@ -1,0 +1,6 @@
+/* Data Analytics Course Page Styles */
+@import './CoursePageShared.css';
+
+.dataanalytics-course-page {
+  padding-top: 120px;
+}

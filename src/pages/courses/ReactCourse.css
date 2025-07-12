@@ -1,0 +1,6 @@
+/* React Course Page Styles - Inherits from shared course styles */
+@import './CoursePageShared.css';
+
+.react-course-page {
+  padding-top: 120px;
+}

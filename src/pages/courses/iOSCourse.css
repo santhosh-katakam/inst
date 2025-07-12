@@ -1,0 +1,6 @@
+/* iOS Course Page Styles */
+@import './CoursePageShared.css';
+
+.ios-course-page {
+  padding-top: 120px;
+}

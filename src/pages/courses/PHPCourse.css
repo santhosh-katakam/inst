@@ -1,0 +1,6 @@
+/* PHP Course Page Styles */
+@import './CoursePageShared.css';
+
+.php-course-page {
+  padding-top: 120px;
+}

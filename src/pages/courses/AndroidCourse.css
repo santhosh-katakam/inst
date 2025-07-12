@@ -1,0 +1,6 @@
+/* Android Course Page Styles */
+@import './CoursePageShared.css';
+
+.android-course-page {
+  padding-top: 120px;
+}

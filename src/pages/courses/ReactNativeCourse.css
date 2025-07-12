@@ -1,0 +1,6 @@
+/* React Native Course Page Styles */
+@import './CoursePageShared.css';
+
+.reactnative-course-page {
+  padding-top: 120px;
+}

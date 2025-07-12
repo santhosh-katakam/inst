@@ -1,0 +1,6 @@
+/* JavaScript Course Page Styles */
+@import './CoursePageShared.css';
+
+.javascript-course-page {
+  padding-top: 120px;
+}

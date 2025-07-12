@@ -1,0 +1,6 @@
+/* Graphic Design Course Page Styles */
+@import './CoursePageShared.css';
+
+.graphicdesign-course-page {
+  padding-top: 120px;
+}

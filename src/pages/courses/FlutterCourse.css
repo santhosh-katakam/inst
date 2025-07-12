@@ -1,0 +1,6 @@
+/* Flutter Course Page Styles */
+@import './CoursePageShared.css';
+
+.flutter-course-page {
+  padding-top: 120px;
+}

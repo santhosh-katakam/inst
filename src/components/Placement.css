@@ -1,0 +1,303 @@
+/* Placement Styles */
+.placement {
+  padding: 80px 0;
+  background: white;
+}
+
+.placement-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.placement-content {
+  margin-top: 60px;
+}
+
+.placement-initiative {
+  margin-bottom: 80px;
+}
+
+.initiative-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.initiative-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.initiative-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.initiative-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.initiative-features li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.initiative-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.initiative-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.initiative-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.initiative-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.initiative-image:hover .video-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+}
+
+.registration-form {
+  background: #96ccf2;
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+}
+
+.registration-form h4 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.placement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.placement-form input,
+.placement-form select {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.placement-form input::placeholder {
+  color: #666;
+}
+
+.company-partners {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.company-logo {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: translateY(-5px);
+}
+
+.company-logo img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.company-logo:hover img {
+  filter: grayscale(0%);
+}
+
+.expert-placement {
+  margin-top: 80px;
+  background: #96ccf2;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.expert-content h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.expert-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .placement {
+    padding: 60px 0;
+  }
+
+  .initiative-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .initiative-title {
+    font-size: 24px;
+  }
+
+  .initiative-actions {
+    justify-content: center;
+  }
+
+  .registration-form {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .company-logos {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .company-logo {
+    padding: 15px;
+  }
+
+  .company-logo img {
+    height: 40px;
+  }
+
+  .expert-placement {
+    padding: 40px 20px;
+  }
+
+  .expert-content h3 {
+    font-size: 24px;
+  }
+
+  .expert-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .initiative-title {
+    font-size: 20px;
+  }
+
+  .initiative-description {
+    font-size: 14px;
+  }
+
+  .initiative-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .registration-form h4 {
+    font-size: 20px;
+  }
+
+  .company-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners-title {
+    font-size: 24px;
+  }
+
+  .expert-content h3 {
+    font-size: 20px;
+  }
+}

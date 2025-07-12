@@ -1,0 +1,6 @@
+/* Machine Learning Course Page Styles */
+@import './CoursePageShared.css';
+
+.ml-course-page {
+  padding-top: 120px;
+}

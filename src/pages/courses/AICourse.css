@@ -1,0 +1,6 @@
+/* AI Course Page Styles */
+@import './CoursePageShared.css';
+
+.ai-course-page {
+  padding-top: 120px;
+}

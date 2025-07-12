@@ -1,0 +1,6 @@
+/* Data Science Course Page Styles */
+@import './CoursePageShared.css';
+
+.datascience-course-page {
+  padding-top: 120px;
+}

@@ -1,0 +1,6 @@
+/* HTML/CSS Course Page Styles */
+@import './CoursePageShared.css';
+
+.htmlcss-course-page {
+  padding-top: 120px;
+}
