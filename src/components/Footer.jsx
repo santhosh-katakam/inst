@@ -117,19 +117,7 @@ const Footer = () => {
             </div>
           </div> */}
 
-          <div className="blogs-section">
-            <h3>Latest Blogs</h3>
-            <div className="blogs-list">
-              {blogs.map((blog, index) => (
-                <div key={index} className="blog-item">
-                  <span className="blog-date">{blog.date}</span>
-                  <h4 className="blog-title">{blog.title}</h4>
-                  <p className="blog-excerpt">{blog.excerpt}</p>
-                  <a href="#" className="blog-link">View full Blog</a>
-                </div>
-              ))}
-            </div>
-          </div>
+
         </div>
       </div>
 

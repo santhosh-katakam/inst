@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
+import rcsBi from '../assets/rcs_bi.png'
+import rcsJava from '../assets/rcs_java.png'
+import rcsPython from '../assets/rcs_python.png'
+import rcsMuslim from '../assets/rcs_muslim.png'
 
 const Hero = () => {
   const stats = [
@@ -17,10 +21,10 @@ const Hero = () => {
   ]
 
   const images = [
-    'src/assets/rcs_bi.png',
-    'src/assets/rcs_java.png',
-    'src/assets/rcs_python.png',
-    'src/assets/rcs_muslim.png',
+    rcsBi,
+    rcsJava,
+    rcsPython,
+    rcsMuslim,
   ];
   const [currentImage, setCurrentImage] = React.useState(0);
 
