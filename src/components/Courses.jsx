@@ -83,7 +83,69 @@ const Courses = () => {
   }
 
   return (
-    <section className="courses" id="courses"></section>
+    <section className="courses" id="courses">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Our Popular Courses</h2>
+          <p>Choose from 40+ industry-relevant courses designed to boost your career</p>
+
+          <div className="course-tabs">
+            <button
+              className={`tab-btn ${activeTab === 'classroom' ? 'active' : ''}`}
+              onClick={() => setActiveTab('classroom')}
+            >
+              Classroom Training
+            </button>
+            <button
+              className={`tab-btn ${activeTab === 'online' ? 'active' : ''}`}
+              onClick={() => setActiveTab('online')}
+            >
+              Online Training
+            </button>
+          </div>
+        </div>
+
+        <div className="courses-content">
+          <div className="categories-sidebar">
+            <h3>Course Categories</h3>
+            <div className="category-list">
+              {courseCategories.map((category) => (
+                <button
+                  key={category.id}
+                  className={`category-item ${selectedCategory === category.id ? 'active' : ''}`}
+                  onClick={() => setSelectedCategory(category.id)}
+                >
+                  <span className="category-icon">{category.icon}</span>
+                  <span className="category-name">{category.name}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="courses-grid">
+            {getCurrentCourses().slice(0, 6).map((course, index) => (
+              <div key={index} className="course-card">
+                <div className="course-icon">{course.icon}</div>
+                <h3 className="course-name">{course.name}</h3>
+                <div className="course-meta">
+                  <span className="course-duration">📅 {course.duration}</span>
+                  <span className="course-level">📊 {course.level}</span>
+                </div>
+                <div className="course-actions">
+                  <Link to={course.link} className="btn btn-primary">View Details</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="courses-footer">
+          <Link to="/courses" className="btn btn-secondary btn-large">
+            View All Courses →
+          </Link>
+        </div>
+      </div>
+    </section>
   )
 }
 
