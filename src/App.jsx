@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -49,8 +49,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/courses/:category" element={<CoursePage />} />          
-<Route path="/placement" element={<Placement />} />          {/* Individual Course Pages */}
+          <Route path="/courses/:category" element={<CoursePage />} />
+          <Route path="/placement" element={<Placement />} />
+          {/* Individual Course Pages */}
           <Route path="/course/java" element={<JavaCourse />} />
           <Route path="/course/python" element={<PythonCourse />} />
           <Route path="/course/react" element={<ReactCourse />} />
