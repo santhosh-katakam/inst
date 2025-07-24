@@ -114,7 +114,7 @@ const iOSCourse = () => {
             
             <div className="course-enrollment">
               <div className="price-card">
-                <div className="price">₹28,999</div>
+                <div className="price">10% discount</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
                 <a
                   href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"

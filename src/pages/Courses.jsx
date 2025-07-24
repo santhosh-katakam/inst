@@ -54,7 +54,7 @@ const Courses = () => {
       icon: '🐍', 
       duration: '4 months', 
       level: 'Beginner to Advanced',
-      price: '₹25,000',
+      price: '10% discount',
       rating: 4.8,
       students: 1250,
       description: 'Master Python programming from basics to advanced concepts including Django, Flask, and data science libraries.'
@@ -66,7 +66,7 @@ const Courses = () => {
       icon: '☕', 
       duration: '5 months', 
       level: 'Beginner to Advanced',
-      price: '₹30,000',
+      price: '10% discount',
       rating: 4.7,
       students: 980,
       description: 'Complete Java programming course covering Core Java, Spring Framework, and enterprise application development.'
@@ -78,7 +78,7 @@ const Courses = () => {
       icon: '⚛️', 
       duration: '3 months', 
       level: 'Intermediate',
-      price: '₹22,000',
+      price: '10% discount',
       rating: 4.9,
       students: 750,
       description: 'Build modern web applications using React, Redux, and related technologies.'
