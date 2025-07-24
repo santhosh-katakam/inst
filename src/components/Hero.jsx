@@ -4,10 +4,10 @@ import './Hero.css'
 
 const Hero = () => {
   const stats = [
-    { number: '1 Lac+', label: 'Students Placed' },
-    { number: '3000+', label: 'Companies TieUp' },
-    { number: '19+', label: 'Offices in India' },
-    { number: '50+', label: 'Industry Courses' }
+    { number: '10K+', label: 'Students Trained' },
+    { number: '10+', label: 'Companies TieUp' },
+    // { number: '19+', label: 'Offices in India' },
+    { number: '40+', label: 'Industry Courses' }
   ]
 
   const ratings = [
@@ -17,15 +17,17 @@ const Hero = () => {
   ]
 
   const images = [
-    'src/assets/hero1.jpg',
-    'src/assets/hero2.jpg',
+    'src/assets/rcs_bi.png',
+    'src/assets/rcs_java.png',
+    'src/assets/rcs_python.png',
+    'src/assets/rcs_muslim.png',
   ];
   const [currentImage, setCurrentImage] = React.useState(0);
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 1000);
+      setCurrentImage((prev) => (prev + 3) % images.length);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -58,7 +60,7 @@ const Hero = () => {
             <div className="years-badge">
               <div className="years-content">
                 <div className="years-icon">
-                  <span className="years-number">15</span>
+                  <span className="years-number">17</span>
                   <div className="years-stars">
                     <span>⭐</span>
                     <span>⭐</span>
@@ -67,14 +69,14 @@ const Hero = () => {
                   <span className="years-label">YEARS</span>
                 </div>
                 <div className="years-text">
-                  <span>15 Years in the field of</span>
-                  <span>IT Training &</span>
-                  <span>Placement Industry</span>
+                  <span>Our trainers bring over</span>
+                  <span>15 Years of Experience</span>
+                  <span>IT Training</span>
                 </div>
-              </div>
+              </div>                                                                                                                
             </div>
 
-            <div className="stats-row">
+            <div className="stats-row">                                                                                                                                                                                                                                         
               {stats.map((stat, index) => (
                 <div key={index} className="stat-item">
                   <div className="stat-icon">
@@ -95,18 +97,33 @@ const Hero = () => {
       </div>
 
       <div className="bottom-action-bar">
-        <div className="action-item call">
+        <a
+          href="https://wa.me/9392963190"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="action-item call"
+        >
           <span className="action-icon">📞</span>
           <span className="action-text">Call Now!</span>
-        </div>
-        <div className="action-item whatsapp">
+        </a>
+        <a
+          href="https://wa.me/939296390"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="action-item whatsapp"
+        >
           <span className="action-icon">💬</span>
           <span className="action-text">Leave a Whatsapp Message</span>
-        </div>
-        <div className="action-item inquire">
+        </a>
+        <a
+          href="https://wa.me/9392963190"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="action-item inquire"
+        >
           <span className="action-icon">📝</span>
           <span className="action-text">Inquire Now</span>
-        </div>
+        </a>
       </div>
 
 

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './Header.css'
+import rcsLogo from '../assets/rcs_logo.png'; // Add this import at the top
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -38,7 +39,7 @@ const Header = () => {
     {
       name: 'Mobile Development',
       icon: '📱',
-      courses: ['Android', 'iOS', 'React Native', 'Flutter']
+      courses: ['Android', 'React Native', 'Flutter']
     },
     {
       name: 'Data Science & AI',
@@ -63,14 +64,13 @@ const Header = () => {
         <div className="container">
           <div className="nav-content">
             <Link to="/" className="logo">
-              <div className="logo-icon">🎓</div>
+              <img src={rcsLogo} alt="RCS Logo" className="logo-icon" />
               <span className="logo-text">
-                <span className="logo-main">TECH</span>
-                <span className="logo-sub">INSTITUTE</span>
+                Real Code Synapse
+                <div className="logo-tagline">
+                  <span>Skill Development | External Resourcing | Employment Support | Overseas Learning</span>
+                </div>
               </span>
-              <div className="logo-tagline">
-                <span>Training | Outsourcing | Placement | Study Abroad</span>
-              </div>
             </Link>
 
             <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
@@ -114,7 +114,7 @@ const Header = () => {
               <Link to="/webinars" className="nav-link">Webinars</Link>
               
 
-              <a href="tel:+91-7622011173" className="nav-link phone">+91-7622011173</a>
+              <a href="tel:+91-9392963190" className="nav-link phone">+91-9392963190</a>
             </div>
 
             <button 

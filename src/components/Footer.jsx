@@ -1,4 +1,5 @@
 import './Footer.css'
+// import InquiryForm from './components/InquiryForm';
 
 const Footer = () => {
   const locations = [
@@ -82,7 +83,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="container">
-          <div className="webinars-section">
+          {/* <div className="webinars-section">
             <h3>Upcoming Webinars</h3>
             <div className="webinars-grid">
               {webinars.map((webinar, index) => (
@@ -94,8 +95,8 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-          </div>
-
+          </div> */}
+{/* 
           <div className="locations-section">
             <h3>Our Training Centers in India</h3>
             <div className="locations-grid">
@@ -114,7 +115,7 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="blogs-section">
             <h3>Latest Blogs</h3>
@@ -136,7 +137,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <img src="/logo.png" alt="TechInstitute Logo" className="footer-logo" />
+              <img src="../src/assets/rcs_logo.png" alt="RCS Logo" className="footer-logo" />
               
               <div className="footer-locations">
                 <h4>Locations where you can Visit Us</h4>
@@ -200,41 +201,31 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 TechInstitute. All Rights Reserved.</p>
+            <p>&copy; 2025 RealCode Synapse. All Rights Reserved.</p>
             <div className="footer-actions">
-              <a href="tel:7622011173" className="footer-btn">Call Now!</a>
-              <a href="#" className="footer-btn">Leave a WhatsApp Message</a>
-              <a href="#" className="footer-btn">Inquire Now</a>
+              <a href="tel:9392963190" className="footer-btn">Call Now!</a>
+              <a
+                href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-btn"
+              >
+                Leave a WhatsApp Message
+              </a>
+              <a
+                href="https://wa.me/919392963190?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20courses."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-btn"
+              >
+                Inquire Now
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="inquiry-form">
-        <div className="container">
-          <div className="form-content">
-            <h3>Send Us Your Inquiry - We will Call you Back</h3>
-            <form className="contact-form">
-              <div className="form-row">
-                <input type="text" placeholder="Full Name" required />
-                <input type="email" placeholder="Email Address" required />
-              </div>
-              <div className="form-row">
-                <input type="tel" placeholder="Phone Number" required />
-                <select required>
-                  <option value="">Select Course</option>
-                  <option value="python">Python</option>
-                  <option value="java">Java</option>
-                  <option value="react">React</option>
-                  <option value="android">Android</option>
-                </select>
-              </div>
-              <textarea placeholder="Your Message" rows="4"></textarea>
-              <button type="submit" className="btn btn-primary">Send Inquiry</button>
-            </form>
-          </div>
-        </div>
-      </div>
+      {/* <InquiryForm /> */}
     </footer>
   )
 }

@@ -83,63 +83,7 @@ const Courses = () => {
   }
 
   return (
-    <section className="courses" id="courses">
-      <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">Get Choice of our best Courses</h2>
-          <div className="course-tabs">
-            <button 
-              className={`tab-btn ${activeTab === 'classroom' ? 'active' : ''}`}
-              onClick={() => setActiveTab('classroom')}
-            >
-              Classroom Training
-            </button>
-            <button 
-              className={`tab-btn ${activeTab === 'online' ? 'active' : ''}`}
-              onClick={() => setActiveTab('online')}
-            >
-              Online Training
-            </button>
-          </div>
-        </div>
-
-        <div className="courses-content">
-          <div className="category-sidebar">
-            {courseCategories.map((category) => (
-              <button
-                key={category.id}
-                className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category.id)}
-              >
-                <span className="category-icon">{category.icon}</span>
-                <span className="category-name">{category.name}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="courses-grid">
-            {getCurrentCourses().map((course, index) => (
-              <div key={index} className="course-card">
-                <div className="course-icon">{course.icon}</div>
-                <h3 className="course-name">{course.name}</h3>
-                <div className="course-details">
-                  <span className="course-duration">📅 {course.duration}</span>
-                  <span className="course-level">📊 {course.level}</span>
-                </div>
-                <div className="course-actions">
-                  {course.link ? (
-                    <Link to={course.link} className="btn btn-primary">View Details</Link>
-                  ) : (
-                    <button className="btn btn-primary">View Details</button>
-                  )}
-                  <Link to="/contact" className="btn btn-secondary">Enquire Now</Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+    <section className="courses" id="courses"></section>
   )
 }
 

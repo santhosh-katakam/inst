@@ -116,7 +116,14 @@ const FlutterCourse = () => {
               <div className="price-card">
                 <div className="price">₹22,999</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
-                <button className="btn btn-primary btn-large">Enroll Now</button>
+                <a
+                  href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Enroll Now
+                </a>
                 <button className="btn btn-secondary btn-large">Download Syllabus</button>
                 
                 <div className="course-features">
@@ -268,7 +275,14 @@ const FlutterCourse = () => {
             <h2>Ready to Build Cross-Platform Mobile Apps?</h2>
             <p>Master Flutter and create stunning apps for millions of users on both iOS and Android.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹22,999</button>
+              <a
+                href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Enroll Now - ₹22,999
+              </a>
               <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>
           </div>

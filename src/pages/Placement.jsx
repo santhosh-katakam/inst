@@ -3,8 +3,8 @@ import './Placement.css'
 const Placement = () => {
   const placementInitiatives = [
     {
-      title: 'JobFest by TechInstitute',
-      description: 'TechInstitute organizes a JobFest where 50+ Companies interview Candidates for their Job Openings. This event is organized at a Convention center',
+      title: 'JobFest by RCS Institute',
+      description: 'RCS Institute organizes a JobFest where 50+ Companies interview Candidates for their Job Openings. This event is organized at a Convention center',
       features: [
         'Maximum salary offered by companies during JobFest for a fresher has been 7.2 lacs',
         'Each student interviews with maximum companies in 1 day',
@@ -15,8 +15,8 @@ const Placement = () => {
       videoUrl: 'https://www.youtube.com/watch?v=NJL4OS_vJI8'
     },
     {
-      title: 'CampusFest by TechInstitute',
-      description: 'TechInstitute organizes a CampusFest where 8-10 companies interview candidates at the local office. Companies access the top talent.',
+      title: 'CampusFest by RCS Institute',
+      description: 'RCS Institute organizes a CampusFest where 8-10 companies interview candidates at the local office. Companies access the top talent.',
       features: [
         'Students get to meet up to 10 companies in 1 day',
         'Hiring managers get to meet trained candidates',
@@ -35,9 +35,11 @@ const Placement = () => {
   return (
     <section className="placement" id="placement">
       <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">Placement Initiative for our Students</h2>
-          <div className="placement-tabs">
+        <div className="section-header" style={{ textAlign: 'center', marginTop: '40px' }}>
+          <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
+            Placement Initiative for our Students
+          </h2>
+          <div className="placement-tabs" style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginBottom: '30px' }}>
             <button className="tab-btn active">JobFest</button>
             <button className="tab-btn">Campus Drive</button>
           </div>

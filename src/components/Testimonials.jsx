@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Testimonials.css'
+import rcsBi from '../assets/rcs_bi.png';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -30,14 +31,14 @@ const Testimonials = () => {
       name: 'Shruti Patel',
       role: 'PHP Developer',
       image: '/testimonials/shruti.jpg',
-      review: 'My Experience in TechInstitute was superb. I got proper guidance and training. The faculties were very helpful and supportive throughout the course.',
+      review: 'My Experience in RCS Institute was superb. I got proper guidance and training. The faculties were very helpful and supportive throughout the course.',
       rating: 5
     },
     {
       name: 'Avi Mangukiya',
       role: 'iOS Developer',
       image: '/testimonials/avi.jpg',
-      review: 'I recently completed an internship with TechInstitute and it was a great learning experience. Great place for learning iOS development with hands-on projects.',
+      review: 'I recently completed an internship with RCS Institute and it was a great learning experience. Great place for learning iOS development with hands-on projects.',
       rating: 5
     },
     {
@@ -50,14 +51,8 @@ const Testimonials = () => {
   ]
 
   const galleryImages = [
-    { src: '/gallery/event1.jpg', title: 'Recruiting Events', category: 'events' },
-    { src: '/gallery/festival1.jpg', title: 'Diwali Celebration', category: 'festivals' },
-    { src: '/gallery/picnic1.jpg', title: 'Annual Picnic', category: 'events' },
-    { src: '/gallery/workshop1.jpg', title: 'IT Workshop', category: 'workshop' },
-    { src: '/gallery/placement1.jpg', title: 'Placement Orientation', category: 'seminars' },
-    { src: '/gallery/jobfair1.jpg', title: 'Tech Job Fair', category: 'job-fair' },
-    { src: '/gallery/seminar1.jpg', title: 'Career Seminar', category: 'seminars' },
-    { src: '/gallery/celebration1.jpg', title: 'Festival Celebration', category: 'festivals' }
+    { src: rcsBi, title: 'RCS', category: 'RCS' },
+    { src: rcsBi, title: 'RCS', category: 'RCS' }
   ]
 
   const nextSlide = () => {
@@ -127,16 +122,16 @@ const Testimonials = () => {
 
       <div className="life-at-institute">
         <div className="container">
-          <h2 className="section-title">Life at TechInstitute</h2>
+          <h2 className="section-title">Life at RealCode Synapse</h2>
           
-          <div className="gallery-filters">
+          {/* <div className="gallery-filters">
             <button className="filter-btn active">All</button>
             <button className="filter-btn">Events</button>
             <button className="filter-btn">Job Fair</button>
             <button className="filter-btn">Festivals</button>
             <button className="filter-btn">Seminars</button>
             <button className="filter-btn">Workshop</button>
-          </div>
+          </div> */}
 
           <div className="gallery-grid">
             {galleryImages.map((image, index) => (

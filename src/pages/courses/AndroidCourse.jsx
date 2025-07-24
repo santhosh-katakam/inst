@@ -116,7 +116,14 @@ const AndroidCourse = () => {
               <div className="price-card">
                 <div className="price">₹24,999</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
-                <button className="btn btn-primary btn-large">Enroll Now</button>
+                <a
+                  href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Enroll Now
+                </a>
                 <button className="btn btn-secondary btn-large">Download Syllabus</button>
                 
                 <div className="course-features">
@@ -268,7 +275,14 @@ const AndroidCourse = () => {
             <h2>Ready to Build Amazing Android Apps?</h2>
             <p>Join millions of Android developers and create apps used by billions worldwide.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹24,999</button>
+              <a
+                href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - ₹24,999
+              </a>
               <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>
           </div>

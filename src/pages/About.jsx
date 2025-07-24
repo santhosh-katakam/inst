@@ -47,7 +47,7 @@ const About = () => {
       <div className="about-hero">
         <div className="container">
           <div className="about-hero-content">
-            <h1>About TechInstitute</h1>
+            <h1>About RCS Institute</h1>
             <p className="hero-subtitle">
               Leading IT Training Institute with 15+ Years of Excellence in Education and Placement
             </p>
@@ -61,7 +61,7 @@ const About = () => {
             <div className="intro-text">
               <h2>Empowering Careers Through Technology Education</h2>
               <p>
-                TechInstitute has been at the forefront of IT education for over 15 years, 
+                RCS Institute has been at the forefront of IT education for over 15 years, 
                 transforming the careers of more than 1 lakh students. We specialize in 
                 providing industry-relevant training in cutting-edge technologies with 
                 guaranteed placement assistance.
