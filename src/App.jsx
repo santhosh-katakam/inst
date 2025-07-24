@@ -41,7 +41,7 @@ import WebinarPage from './pages/WebinarPage'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/inst">
       <div className="App">
         <Header />
         <Routes>
