@@ -57,37 +57,6 @@ const Hero = () => {
               <div className="hero-actions">
                 <Link to="/courses" className="btn btn-primary">Explore Courses</Link>
               </div>
-
-              <div className="training-options">
-                <button
-                  className="btn btn-secondary"
-                  onClick={() => {
-                    const coursesSection = document.getElementById('courses')
-                    if (coursesSection) {
-                      coursesSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                      })
-                    }
-                  }}
-                >
-                  Online Training
-                </button>
-                <button
-                  className="btn btn-accent"
-                  onClick={() => {
-                    const coursesSection = document.getElementById('courses')
-                    if (coursesSection) {
-                      coursesSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                      })
-                    }
-                  }}
-                >
-                  Classroom Training
-                </button>
-              </div>
             </div>
           </div>
 

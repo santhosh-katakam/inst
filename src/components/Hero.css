@@ -167,23 +167,6 @@
   gap: 20px;
 }
 
-.training-options {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.training-options .btn {
-  padding: 12px 25px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid;
-}
-
 .stats-row {
   display: flex;
   gap: 40px;
