@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TechInstitute Website
 
 A modern, responsive website for an IT training institute, inspired by TOPS Technologies. Built with React and Vite for optimal performance and developer experience.
@@ -114,3 +115,6 @@ To customize the website for your institute:
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+=======
+# FinalV1Rcs
+>>>>>>> a231d5ab46e20b09309bc7d0aabb7860233a121b
