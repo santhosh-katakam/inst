@@ -1,4 +1,5 @@
 import './Footer.css'
+import rcsLogo from '../assets/rcs_logo.png'
 // import InquiryForm from './components/InquiryForm';
 
 const Footer = () => {
@@ -125,7 +126,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <img src="../src/assets/rcs_logo.png" alt="RCS Logo" className="footer-logo" />
+              <img src={rcsLogo} alt="RCS Logo" className="footer-logo" />
               
               <div className="footer-locations">
                 <h4>Locations where you can Visit Us</h4>
