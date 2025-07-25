@@ -10,8 +10,10 @@ const AdminPanel = () => {
     date: '',
     excerpt: '',
     content: '',
-    image: '/blog-images/default.jpg'
+    image: ''
   });
+  const [imageFile, setImageFile] = useState(null);
+  const [imagePreview, setImagePreview] = useState('');
 
   // Load blogs from localStorage on component mount
   useEffect(() => {
@@ -26,24 +28,24 @@ const AdminPanel = () => {
           title: 'Top 20 Java Interview Questions You Must Know in 2025',
           date: 'Jun 20, 2025',
           excerpt: 'Top 20 Java Interview Questions for 2025! Master core concepts, OOP, Java updates, multithreading...',
-          image: '/blog-images/java-interview.jpg',
-          content: '<h2>Introduction</h2><p>Java remains one of the most popular programming languages...</p>'
+          image: 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop',
+          content: '<h2>Introduction</h2><p>Java remains one of the most popular programming languages in the world, powering everything from enterprise applications to mobile apps. Whether you\'re preparing for your first Java interview or looking to advance your career, mastering these fundamental questions is crucial.</p><h3>Core Java Concepts</h3><p>Understanding the basics of Java is essential for any developer. Here are the key concepts you should master...</p>'
         },
         {
           id: 'java-roadmap-beginners',
           title: 'Complete Java Roadmap for Beginners to Advanced',
           date: 'Jun 20, 2025',
           excerpt: 'Master Java from basics to advanced: setup, OOP, collections, multithreading, JDBC, Spring, tools...',
-          image: '/blog-images/java-roadmap.jpg',
-          content: '<h2>Your Complete Java Learning Journey</h2><p>Learning Java can seem overwhelming...</p>'
+          image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop',
+          content: '<h2>Your Complete Java Learning Journey</h2><p>Learning Java can seem overwhelming, but with the right roadmap, you can master this powerful programming language step by step. This comprehensive guide will take you from absolute beginner to advanced Java developer.</p><h3>Phase 1: Java Fundamentals</h3><p>Start with the basics: variables, data types, operators, and control structures...</p>'
         },
         {
           id: 'seo-score-checker-tips',
           title: 'SEO Score Checker: Improve Your Website with Actionable Tips',
           date: 'Jun 04, 2025',
           excerpt: 'Use our SEO Score Checker to analyze your website\'s performance and discover practical tips...',
-          image: '/blog-images/seo-checker.jpg',
-          content: '<h2>Understanding SEO Score Checkers</h2><p>SEO score checkers are essential tools...</p>'
+          image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop',
+          content: '<h2>Understanding SEO Score Checkers</h2><p>SEO score checkers are essential tools for website optimization. They analyze various aspects of your website and provide actionable insights to improve your search engine rankings.</p><h3>Key SEO Metrics</h3><p>Learn about the most important SEO metrics that affect your website\'s performance...</p>'
         }
       ];
       setBlogs(defaultBlogs);
@@ -94,6 +96,24 @@ const AdminPanel = () => {
     resetForm();
   };
 
+  // Handle image upload
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImageFile(file);
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const imageDataUrl = e.target.result;
+        setImagePreview(imageDataUrl);
+        setCurrentBlog(prev => ({
+          ...prev,
+          image: imageDataUrl
+        }));
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   // Reset form
   const resetForm = () => {
     setCurrentBlog({
@@ -102,14 +122,17 @@ const AdminPanel = () => {
       date: '',
       excerpt: '',
       content: '',
-      image: '/blog-images/default.jpg'
+      image: ''
     });
+    setImageFile(null);
+    setImagePreview('');
     setIsEditing(false);
   };
 
   // Edit blog
   const editBlog = (blog) => {
     setCurrentBlog(blog);
+    setImagePreview(blog.image || '');
     setIsEditing(true);
   };
 
@@ -166,12 +189,19 @@ const AdminPanel = () => {
               </div>
 
               <div className="form-group">
-                <label>Image URL</label>
+                <label>Blog Image</label>
                 <input
-                  type="text"
-                  value={currentBlog.image}
-                  onChange={(e) => setCurrentBlog({...currentBlog, image: e.target.value})}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageUpload}
+                  className="image-upload"
                 />
+                {imagePreview && (
+                  <div className="image-preview">
+                    <img src={imagePreview} alt="Preview" style={{maxWidth: '200px', maxHeight: '150px', objectFit: 'cover', borderRadius: '8px', marginTop: '10px'}} />
+                  </div>
+                )}
+                <small>Upload an image for your blog post (optional)</small>
               </div>
 
               <div className="form-actions">

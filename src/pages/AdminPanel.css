@@ -274,3 +274,41 @@
 .blogs-list::-webkit-scrollbar-thumb:hover {
   background: #1e3d6f;
 }
+
+/* Image Upload Styles */
+.image-upload {
+  padding: 15px;
+  border: 2px dashed #2c5aa0;
+  border-radius: 8px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.image-upload:hover {
+  border-color: #1e3d6f;
+  background: #e8f2ff;
+}
+
+.image-preview {
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.image-preview img {
+  border: 2px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group small {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  display: block;
+  font-style: italic;
+}
