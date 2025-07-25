@@ -275,8 +275,14 @@ const JavaScriptCourse = () => {
             <h2>Ready to Master JavaScript?</h2>
             <p>Start your journey to becoming a professional JavaScript developer today.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹15,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20JavaScript%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>

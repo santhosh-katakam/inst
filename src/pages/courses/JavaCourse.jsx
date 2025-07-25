@@ -284,9 +284,8 @@ const JavaCourse = () => {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Enroll Now - ₹25,999
+                Enroll Now - 10% discount
               </a>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>
           </div>
         </div>

@@ -278,8 +278,14 @@ const ReactCourse = () => {
             <h2>Ready to Build Amazing React Applications?</h2>
             <p>Join thousands of developers who have mastered React and landed their dream jobs.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹19,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20React%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>

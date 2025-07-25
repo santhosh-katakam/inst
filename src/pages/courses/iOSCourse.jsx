@@ -275,8 +275,14 @@ const iOSCourse = () => {
             <h2>Ready to Build Premium iOS Apps?</h2>
             <p>Join the elite iOS developer community and create apps for millions of iPhone users worldwide.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹28,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20iOS%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>

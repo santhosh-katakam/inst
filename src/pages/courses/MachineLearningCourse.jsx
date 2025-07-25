@@ -275,8 +275,14 @@ const MachineLearningCourse = () => {
             <h2>Ready to Build Intelligent Systems?</h2>
             <p>Join the AI revolution and become a Machine Learning expert with high-demand skills.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹35,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Machine%20Learning%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>

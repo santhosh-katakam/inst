@@ -299,7 +299,6 @@ const CoursePage = () => {
               >
                 Enroll Now
               </a>
-              <button className="btn btn-secondary">Talk to Counselor</button>
             </div>
           </div>
         </div>

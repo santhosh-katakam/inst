@@ -275,8 +275,14 @@ const ReactNativeCourse = () => {
             <h2>Ready to Build Cross-Platform Native Apps?</h2>
             <p>Master React Native and create powerful mobile apps used by billions worldwide.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹23,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20React%20Native%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>

@@ -283,7 +283,7 @@ const FlutterCourse = () => {
               >
                 Enroll Now - 10% discount
               </a>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+
             </div>
           </div>
         </div>

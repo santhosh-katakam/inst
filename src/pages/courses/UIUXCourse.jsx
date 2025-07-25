@@ -275,8 +275,14 @@ const UIUXCourse = () => {
             <h2>Ready to Design Amazing User Experiences?</h2>
             <p>Create beautiful, user-centered designs that make a real impact on millions of users.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹19,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20UI%2FUX%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>

@@ -275,8 +275,14 @@ const GraphicDesignCourse = () => {
             <h2>Ready to Create Stunning Visual Designs?</h2>
             <p>Master graphic design and bring your creative vision to life with professional design skills.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹16,999</button>
-              <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Graphic%20Design%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
             </div>
           </div>
         </div>
