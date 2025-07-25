@@ -3,10 +3,6 @@ import rcsLogo from '../assets/rcs_logo.png'
 // import InquiryForm from './components/InquiryForm';
 
 const Footer = () => {
-  const locations = [
-    { city: 'Ahmedabad', branches: ['C.G.Road'] },
-  ]
-
   const services = [
     'IT Training',
     'Online IT Training',
@@ -39,29 +35,6 @@ const Footer = () => {
     'List of Top IT Companies'
   ]
 
-  const webinars = [
-    {
-      title: 'How to Protect your Website from Hackers',
-      date: '27th June',
-      trainer: 'Security Expert'
-    },
-    {
-      title: 'Building and Publishing Mobile Apps',
-      date: '27th June',
-      trainer: 'Mobile Developer'
-    },
-    {
-      title: 'Skills you need to Become an Expert Data Analyst',
-      date: '28th June',
-      trainer: 'Data Scientist'
-    },
-    {
-      title: 'Before Starting Digital Marketing Career',
-      date: '28th June',
-      trainer: 'Marketing Expert'
-    }
-  ]
-
   const blogs = [
     {
       title: 'Top 20 Java Interview Questions You Must Know in 2025',
@@ -84,41 +57,19 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="container">
-          {/* <div className="webinars-section">
-            <h3>Upcoming Webinars</h3>
-            <div className="webinars-grid">
-              {webinars.map((webinar, index) => (
-                <div key={index} className="webinar-card">
-                  <h4>{webinar.title}</h4>
-                  <p className="webinar-date">Live on {webinar.date}</p>
-                  <p className="webinar-trainer">Trainer: {webinar.trainer}</p>
-                  <button className="btn btn-primary">Attend Webinar</button>
+          <div className="blogs-section">
+            <h3>Latest Blogs</h3>
+            <div className="blogs-grid">
+              {blogs.map((blog, index) => (
+                <div key={index} className="blog-card">
+                  <h4>{blog.title}</h4>
+                  <p className="blog-date">{blog.date}</p>
+                  <p className="blog-excerpt">{blog.excerpt}</p>
+                  <a href="#" className="blog-read-more">Read More</a>
                 </div>
               ))}
             </div>
-          </div> */}
-{/* 
-          <div className="locations-section">
-            <h3>Our Training Centers in India</h3>
-            <div className="locations-grid">
-              {locations.map((location, index) => (
-                <div key={index} className="location-card">
-                  <h4>{location.city}</h4>
-                  <ul>
-                    {location.branches.map((branch, branchIndex) => (
-                      <li key={branchIndex}>{branch}</li>
-                    ))}
-                  </ul>
-                  <div className="location-actions">
-                    <button className="btn btn-secondary">Visit Us</button>
-                    <button className="btn btn-secondary">Get Direction</button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div> */}
-
-
+          </div>
         </div>
       </div>
 
@@ -169,21 +120,6 @@ const Footer = () => {
                 <ul>
                   {otherPages.map((page, index) => (
                     <li key={index}><a href="#">{page}</a></li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="footer-column">
-                <h4>Latest Blogs</h4>
-                <ul className="blog-list">
-                  {blogs.map((blog, index) => (
-                    <li key={index} className="blog-item">
-                      <a href="#" className="blog-link">
-                        <h5 className="blog-title">{blog.title}</h5>
-                        <p className="blog-date">{blog.date}</p>
-                        <p className="blog-excerpt">{blog.excerpt}</p>
-                      </a>
-                    </li>
                   ))}
                 </ul>
               </div>
