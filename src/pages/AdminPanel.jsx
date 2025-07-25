@@ -10,8 +10,6 @@ const AdminPanel = () => {
     date: '',
     excerpt: '',
     content: '',
-    author: 'RCS Team',
-    readTime: '5 min read',
     image: '/blog-images/default.jpg'
   });
 
@@ -28,8 +26,6 @@ const AdminPanel = () => {
           title: 'Top 20 Java Interview Questions You Must Know in 2025',
           date: 'Jun 20, 2025',
           excerpt: 'Top 20 Java Interview Questions for 2025! Master core concepts, OOP, Java updates, multithreading...',
-          author: 'RCS Team',
-          readTime: '8 min read',
           image: '/blog-images/java-interview.jpg',
           content: '<h2>Introduction</h2><p>Java remains one of the most popular programming languages...</p>'
         },
@@ -38,8 +34,6 @@ const AdminPanel = () => {
           title: 'Complete Java Roadmap for Beginners to Advanced',
           date: 'Jun 20, 2025',
           excerpt: 'Master Java from basics to advanced: setup, OOP, collections, multithreading, JDBC, Spring, tools...',
-          author: 'RCS Team',
-          readTime: '12 min read',
           image: '/blog-images/java-roadmap.jpg',
           content: '<h2>Your Complete Java Learning Journey</h2><p>Learning Java can seem overwhelming...</p>'
         },
@@ -48,8 +42,6 @@ const AdminPanel = () => {
           title: 'SEO Score Checker: Improve Your Website with Actionable Tips',
           date: 'Jun 04, 2025',
           excerpt: 'Use our SEO Score Checker to analyze your website\'s performance and discover practical tips...',
-          author: 'RCS Team',
-          readTime: '6 min read',
           image: '/blog-images/seo-checker.jpg',
           content: '<h2>Understanding SEO Score Checkers</h2><p>SEO score checkers are essential tools...</p>'
         }
@@ -63,6 +55,8 @@ const AdminPanel = () => {
   const saveBlogs = (updatedBlogs) => {
     localStorage.setItem('rcs-blogs', JSON.stringify(updatedBlogs));
     setBlogs(updatedBlogs);
+    // Dispatch custom event to notify other components
+    window.dispatchEvent(new CustomEvent('blogUpdated'));
   };
 
   // Generate ID from title
@@ -108,8 +102,6 @@ const AdminPanel = () => {
       date: '',
       excerpt: '',
       content: '',
-      author: 'RCS Team',
-      readTime: '5 min read',
       image: '/blog-images/default.jpg'
     });
     setIsEditing(false);
@@ -151,24 +143,7 @@ const AdminPanel = () => {
                 />
               </div>
 
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Author</label>
-                  <input
-                    type="text"
-                    value={currentBlog.author}
-                    onChange={(e) => setCurrentBlog({...currentBlog, author: e.target.value})}
-                  />
-                </div>
-                <div className="form-group">
-                  <label>Read Time</label>
-                  <input
-                    type="text"
-                    value={currentBlog.readTime}
-                    onChange={(e) => setCurrentBlog({...currentBlog, readTime: e.target.value})}
-                  />
-                </div>
-              </div>
+
 
               <div className="form-group">
                 <label>Excerpt *</label>
@@ -219,7 +194,7 @@ const AdminPanel = () => {
                 <div key={blog.id} className="blog-item">
                   <div className="blog-info">
                     <h3>{blog.title}</h3>
-                    <p className="blog-meta">{blog.date} • {blog.author} • {blog.readTime}</p>
+                    <p className="blog-meta">{blog.date}</p>
                     <p className="blog-excerpt">{blog.excerpt}</p>
                   </div>
                   <div className="blog-actions">

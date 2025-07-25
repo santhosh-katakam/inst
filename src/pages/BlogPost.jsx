@@ -7,16 +7,20 @@ const BlogPost = () => {
   const [blogPosts, setBlogPosts] = useState({});
 
   useEffect(() => {
-    // Load blogs from localStorage
-    const savedBlogs = localStorage.getItem('rcs-blogs');
-    if (savedBlogs) {
-      const blogs = JSON.parse(savedBlogs);
-      const blogMap = {};
-      blogs.forEach(blog => {
-        blogMap[blog.id] = blog;
-      });
-      setBlogPosts(blogMap);
-    } else {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+
+    const loadBlogs = () => {
+      // Load blogs from localStorage
+      const savedBlogs = localStorage.getItem('rcs-blogs');
+      if (savedBlogs) {
+        const blogs = JSON.parse(savedBlogs);
+        const blogMap = {};
+        blogs.forEach(blog => {
+          blogMap[blog.id] = blog;
+        });
+        setBlogPosts(blogMap);
+      } else {
       // Default blogs if none exist
       const defaultBlogPosts = {
 
@@ -205,6 +209,20 @@ const BlogPost = () => {
       };
       setBlogPosts(defaultBlogPosts);
     }
+    };
+
+    loadBlogs();
+
+    // Listen for blog updates from admin panel
+    const handleBlogUpdate = () => {
+      loadBlogs();
+    };
+
+    window.addEventListener('blogUpdated', handleBlogUpdate);
+
+    return () => {
+      window.removeEventListener('blogUpdated', handleBlogUpdate);
+    };
   }, []);
 
   const blog = blogPosts[id];
@@ -232,8 +250,6 @@ const BlogPost = () => {
             <h1 className="blog-title">{blog.title}</h1>
             <div className="blog-meta">
               <span className="blog-date">{blog.date}</span>
-              <span className="blog-author">By {blog.author}</span>
-              <span className="blog-read-time">{blog.readTime}</span>
             </div>
           </div>
 

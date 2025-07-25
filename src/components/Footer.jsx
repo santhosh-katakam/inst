@@ -9,34 +9,59 @@ const Footer = () => {
 
   // Load blogs from localStorage
   useEffect(() => {
-    const savedBlogs = localStorage.getItem('rcs-blogs');
-    if (savedBlogs) {
-      const parsedBlogs = JSON.parse(savedBlogs);
-      setBlogs(parsedBlogs.slice(0, 3)); // Show only latest 3 blogs
-    } else {
-      // Default blogs if none exist
-      const defaultBlogs = [
-        {
-          id: 'java-interview-questions-2025',
-          title: 'Top 20 Java Interview Questions You Must Know in 2025',
-          date: 'Jun 20, 2025',
-          excerpt: 'Top 20 Java Interview Questions for 2025! Master core concepts, OOP, Java updates, multithreading...'
-        },
-        {
-          id: 'java-roadmap-beginners',
-          title: 'Complete Java Roadmap for Beginners to Advanced',
-          date: 'Jun 20, 2025',
-          excerpt: 'Master Java from basics to advanced: setup, OOP, collections, multithreading, JDBC, Spring, tools...'
-        },
-        {
-          id: 'seo-score-checker-tips',
-          title: 'SEO Score Checker: Improve Your Website with Actionable Tips',
-          date: 'Jun 04, 2025',
-          excerpt: 'Use our SEO Score Checker to analyze your website\'s performance and discover practical tips...'
-        }
-      ];
-      setBlogs(defaultBlogs);
-    }
+    const loadBlogs = () => {
+      const savedBlogs = localStorage.getItem('rcs-blogs');
+      if (savedBlogs) {
+        const parsedBlogs = JSON.parse(savedBlogs);
+        setBlogs(parsedBlogs.slice(0, 3)); // Show only latest 3 blogs
+      } else {
+        // Default blogs if none exist
+        const defaultBlogs = [
+          {
+            id: 'java-interview-questions-2025',
+            title: 'Top 20 Java Interview Questions You Must Know in 2025',
+            date: 'Jun 20, 2025',
+            excerpt: 'Top 20 Java Interview Questions for 2025! Master core concepts, OOP, Java updates, multithreading...'
+          },
+          {
+            id: 'java-roadmap-beginners',
+            title: 'Complete Java Roadmap for Beginners to Advanced',
+            date: 'Jun 20, 2025',
+            excerpt: 'Master Java from basics to advanced: setup, OOP, collections, multithreading, JDBC, Spring, tools...'
+          },
+          {
+            id: 'seo-score-checker-tips',
+            title: 'SEO Score Checker: Improve Your Website with Actionable Tips',
+            date: 'Jun 04, 2025',
+            excerpt: 'Use our SEO Score Checker to analyze your website\'s performance and discover practical tips...'
+          }
+        ];
+        setBlogs(defaultBlogs);
+      }
+    };
+
+    loadBlogs();
+
+    // Listen for storage changes (when admin panel updates blogs)
+    const handleStorageChange = (e) => {
+      if (e.key === 'rcs-blogs') {
+        loadBlogs();
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    // Also listen for custom events from same window (admin panel)
+    const handleBlogUpdate = () => {
+      loadBlogs();
+    };
+
+    window.addEventListener('blogUpdated', handleBlogUpdate);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('blogUpdated', handleBlogUpdate);
+    };
   }, [])
   const services = [
     'IT Training',
