@@ -174,6 +174,21 @@ const Footer = () => {
               </div>
 
               <div className="footer-column">
+                <h4>Latest Blogs</h4>
+                <ul className="blog-list">
+                  {blogs.map((blog, index) => (
+                    <li key={index} className="blog-item">
+                      <a href="#" className="blog-link">
+                        <h5 className="blog-title">{blog.title}</h5>
+                        <p className="blog-date">{blog.date}</p>
+                        <p className="blog-excerpt">{blog.excerpt}</p>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="footer-column">
                 <h4>Follow us on</h4>
                 <div className="social-links">
                   <a href="#" className="social-link facebook">📘</a>
