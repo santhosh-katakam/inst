@@ -276,12 +276,12 @@ const AngularCourse = () => {
             <p>Master the most powerful frontend framework used by Fortune 500 companies worldwide.</p>
             <div className="cta-buttons">
               <a
-                href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Angular%20information"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary btn-large"
               >
-                Enroll Now - ₹21,999
+                Enroll Now - 10% discount
               </a>
               <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>

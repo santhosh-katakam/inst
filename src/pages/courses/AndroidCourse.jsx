@@ -276,12 +276,12 @@ const AndroidCourse = () => {
             <p>Join millions of Android developers and create apps used by billions worldwide.</p>
             <div className="cta-buttons">
               <a
-                href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Android%20information"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary btn-large"
               >
-                Enroll Now - ₹24,999
+                Enroll Now - 10% discount
               </a>
               <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>
