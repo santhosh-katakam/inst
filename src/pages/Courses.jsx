@@ -271,7 +271,14 @@ const Courses = () => {
                     <Link to={`/courses/${course.id}`} className="btn btn-primary">
                       View Details
                     </Link>
-                    <button className="btn btn-secondary">Enquire Now</button>
+                    <a
+                      href="https://wa.me/919392963190?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20the%20courses"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-secondary"
+                    >
+                      Enquire Now
+                    </a>
                   </div>
                 </div>
               </div>
@@ -286,7 +293,14 @@ const Courses = () => {
             <h2>Can't Find the Right Course?</h2>
             <p>Our counselors will help you choose the perfect course based on your career goals</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary">Talk to Counselor</button>
+              <a
+                href="https://wa.me/919392963190?text=Hi%2C%20I%20would%20like%20to%20talk%20to%20a%20counselor%20about%20course%20selection"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Talk to Counselor
+              </a>
               <Link to="/contact" className="btn btn-secondary">Contact Us</Link>
             </div>
           </div>
