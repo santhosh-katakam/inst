@@ -118,7 +118,7 @@ const JavaCourse = () => {
                 <div className="price">10% discount</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
                 <a
-                  href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                  href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Java%20information"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
@@ -279,7 +279,7 @@ const JavaCourse = () => {
             <p>Join thousands of successful developers who started their career with our Java course.</p>
             <div className="cta-buttons">
               <a
-                href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Java%20information"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

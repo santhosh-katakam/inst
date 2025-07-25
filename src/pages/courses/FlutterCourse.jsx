@@ -117,7 +117,7 @@ const FlutterCourse = () => {
                 <div className="price">10% discount</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
                 <a
-                  href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                  href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Flutter%20information"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
@@ -276,12 +276,12 @@ const FlutterCourse = () => {
             <p>Master Flutter and create stunning apps for millions of users on both iOS and Android.</p>
             <div className="cta-buttons">
               <a
-                href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Flutter%20information"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Enroll Now - ₹22,999
+                Enroll Now - 10% discount
               </a>
               <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>

@@ -117,7 +117,7 @@ const iOSCourse = () => {
                 <div className="price">10% discount</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
                 <a
-                  href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                  href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20iOS%20Development%20information"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"

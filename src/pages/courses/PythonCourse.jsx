@@ -118,7 +118,7 @@ const PythonCourse = () => {
                 <div className="price">10% discount</div>
                 <div className="price-note">One-time payment • Lifetime access</div>
                 <a
-                  href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
+                  href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Python%20information"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
@@ -278,7 +278,14 @@ const PythonCourse = () => {
             <h2>Ready to Master Python Programming?</h2>
             <p>Join the most popular programming language course and unlock endless career opportunities.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">Enroll Now - ₹22,999</button>
+              <a
+                href="https://wa.me/917659844898?text=Hello%2C%20I%20want%20Python%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+              >
+                Enroll Now - 10% discount
+              </a>
               <Link to="/contact" className="btn btn-secondary btn-large">Talk to Counselor</Link>
             </div>
           </div>
