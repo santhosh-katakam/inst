@@ -192,9 +192,9 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <p>&copy; 2025 RealCode Synapse. All Rights Reserved.</p>
             <div className="footer-actions">
-              <a href="tel:9392963190" className="footer-btn">Call Now!</a>
+              <a href="tel:7659844898" className="footer-btn">Call Now!</a>
               <a
-                href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-btn"
@@ -202,7 +202,7 @@ const Footer = () => {
                 Leave a WhatsApp Message
               </a>
               <a
-                href="https://wa.me/919392963190?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20courses."
+                href="https://wa.me/917659844898?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20courses."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-btn"

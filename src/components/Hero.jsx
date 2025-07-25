@@ -102,7 +102,7 @@ const Hero = () => {
 
       <div className="bottom-action-bar">
         <a
-          href="https://wa.me/9392963190"
+          href="https://wa.me/7659844898"
           target="_blank"
           rel="noopener noreferrer"
           className="action-item call"
@@ -111,7 +111,7 @@ const Hero = () => {
           <span className="action-text">Call Now!</span>
         </a>
         <a
-          href="https://wa.me/939296390"
+          href="https://wa.me/7659844898"
           target="_blank"
           rel="noopener noreferrer"
           className="action-item whatsapp"
@@ -120,7 +120,7 @@ const Hero = () => {
           <span className="action-text">Leave a Whatsapp Message</span>
         </a>
         <a
-          href="https://wa.me/9392963190"
+          href="https://wa.me/7659844898"
           target="_blank"
           rel="noopener noreferrer"
           className="action-item inquire"

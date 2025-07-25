@@ -153,7 +153,7 @@ const CoursePage = () => {
                 <div className="price">{course.price}</div>
                 <div className="price-note">One-time payment</div>
                 <a
-                  href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                  href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
@@ -292,7 +292,7 @@ const CoursePage = () => {
             <p>Join thousands of students who have successfully completed this course</p>
             <div className="cta-buttons">
               <a
-                href="https://wa.me/919392963190?text=Hi%2C%20how%20can%20I%20help%3F"
+                href="https://wa.me/917659844898?text=Hi%2C%20how%20can%20I%20help%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

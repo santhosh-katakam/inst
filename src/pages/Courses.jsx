@@ -272,7 +272,7 @@ const Courses = () => {
                       View Details
                     </Link>
                     <a
-                      href="https://wa.me/919392963190?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20the%20courses"
+                      href="https://wa.me/917659844898?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20the%20courses"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-secondary"
@@ -294,7 +294,7 @@ const Courses = () => {
             <p>Our counselors will help you choose the perfect course based on your career goals</p>
             <div className="cta-buttons">
               <a
-                href="https://wa.me/919392963190?text=Hi%2C%20I%20would%20like%20to%20talk%20to%20a%20counselor%20about%20course%20selection"
+                href="https://wa.me/917659844898?text=Hi%2C%20I%20would%20like%20to%20talk%20to%20a%20counselor%20about%20course%20selection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

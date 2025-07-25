@@ -114,7 +114,7 @@ const Header = () => {
               <Link to="/webinars" className="nav-link">Webinars</Link>
               
 
-              <a href="tel:+91-9392963190" className="nav-link phone">+91-9392963190</a>
+              <a href="tel:+91-7659844898" className="nav-link phone">+91-7659844898</a>
             </div>
 
             <button 
