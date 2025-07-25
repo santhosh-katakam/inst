@@ -4,60 +4,22 @@ import './Courses.css'
 
 const Courses = () => {
   const [activeTab, setActiveTab] = useState('classroom')
-  const [selectedCategory, setSelectedCategory] = useState('all')
 
   // Function to handle tab click and smooth scroll
   const handleTabClick = (tabType) => {
     setActiveTab(tabType)
 
-    // Smooth scroll to course categories section
-    const courseCategoriesSection = document.querySelector('.courses-categories')
-    if (courseCategoriesSection) {
-      courseCategoriesSection.scrollIntoView({
+    // Smooth scroll to courses listing section
+    const coursesListingSection = document.querySelector('.courses-listing')
+    if (coursesListingSection) {
+      coursesListingSection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       })
     }
   }
 
-  const courseCategories = [
-    {
-      id: 'software-development',
-      name: 'Software Development',
-      icon: '💻',
-      description: 'Learn programming languages and frameworks to build modern applications'
-    },
-    {
-      id: 'mobile-development',
-      name: 'Mobile Development',
-      icon: '📱',
-      description: 'Create mobile apps for Android and iOS platforms'
-    },
-    {
-      id: 'data-science',
-      name: 'Data Science & AI',
-      icon: '🤖',
-      description: 'Master data analysis, machine learning, and artificial intelligence'
-    },
-    {
-      id: 'design',
-      name: 'Design',
-      icon: '🎨',
-      description: 'Learn web design, UI/UX, and graphic design skills'
-    },
-    {
-      id: 'testing',
-      name: 'Software Testing',
-      icon: '🧪',
-      description: 'Ensure software quality through manual and automated testing'
-    },
-    {
-      id: 'digital-marketing',
-      name: 'Digital Marketing',
-      icon: '📢',
-      description: 'Master online marketing strategies and SEO techniques'
-    }
-  ]
+
 
   const allCourses = [
     // Software Development
@@ -229,12 +191,7 @@ const Courses = () => {
     }
   ]
 
-  const getFilteredCourses = () => {
-    if (selectedCategory === 'all') {
-      return allCourses
-    }
-    return allCourses.filter(course => course.category === selectedCategory)
-  }
+
 
   const renderStars = (rating) => {
     return [...Array(5)].map((_, i) => (
@@ -268,47 +225,17 @@ const Courses = () => {
         </div>
       </div>
 
-      <section className="courses-categories">
-        <div className="container">
-          <h2 className="section-title">Course Categories</h2>
-          <div className="categories-grid">
-            <button
-              className={`category-card ${selectedCategory === 'all' ? 'active' : ''}`}
-              onClick={() => setSelectedCategory('all')}
-            >
-              <div className="category-icon">📚</div>
-              <h3>All Courses</h3>
-              <p>Browse all available courses</p>
-            </button>
-            {courseCategories.map((category) => (
-              <button
-                key={category.id}
-                className={`category-card ${selectedCategory === category.id ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category.id)}
-              >
-                <div className="category-icon">{category.icon}</div>
-                <h3>{category.name}</h3>
-                <p>{category.description}</p>
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section className="courses-listing">
         <div className="container">
           <div className="courses-header">
-            <h2>
-              {selectedCategory === 'all' 
-                ? 'All Courses' 
-                : courseCategories.find(cat => cat.id === selectedCategory)?.name
-              }
-            </h2>
-            <p>{getFilteredCourses().length} courses available</p>
+            <h2>All Courses</h2>
+            <p>{allCourses.length} courses available</p>
           </div>
-          
+
           <div className="courses-grid">
-            {getFilteredCourses().map((course) => (
+            {allCourses.map((course) => (
               <div key={course.id} className="course-card">
                 <div className="course-header">
                   <div className="course-icon">{course.icon}</div>
