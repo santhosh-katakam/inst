@@ -6,6 +6,20 @@ const Courses = () => {
   const [activeTab, setActiveTab] = useState('classroom')
   const [selectedCategory, setSelectedCategory] = useState('all')
 
+  // Function to handle tab click and smooth scroll
+  const handleTabClick = (tabType) => {
+    setActiveTab(tabType)
+
+    // Smooth scroll to course categories section
+    const courseCategoriesSection = document.querySelector('.courses-categories')
+    if (courseCategoriesSection) {
+      courseCategoriesSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   const courseCategories = [
     {
       id: 'software-development',
@@ -237,15 +251,15 @@ const Courses = () => {
             <p>Choose from 50+ industry-relevant courses designed to boost your career</p>
             
             <div className="course-tabs">
-              <button 
+              <button
                 className={`tab-btn ${activeTab === 'classroom' ? 'active' : ''}`}
-                onClick={() => setActiveTab('classroom')}
+                onClick={() => handleTabClick('classroom')}
               >
                 Classroom Training
               </button>
-              <button 
+              <button
                 className={`tab-btn ${activeTab === 'online' ? 'active' : ''}`}
-                onClick={() => setActiveTab('online')}
+                onClick={() => handleTabClick('online')}
               >
                 Online Training
               </button>
