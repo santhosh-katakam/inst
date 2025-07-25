@@ -36,6 +36,7 @@ import Locations from './pages/Locations'
 import LocationPage from './pages/LocationPage'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import AdminPanel from './pages/AdminPanel'
 import Webinars from './pages/Webinars'
 import WebinarPage from './pages/WebinarPage'
 
@@ -76,7 +77,8 @@ function App() {
           <Route path="/locations" element={<Locations />} />
           <Route path="/locations/:city" element={<LocationPage />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/admin" element={<AdminPanel />} />
           <Route path="/webinars" element={<Webinars />} />
           <Route path="/webinars/:id" element={<WebinarPage />} />
         </Routes>

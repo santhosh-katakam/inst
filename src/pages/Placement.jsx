@@ -15,12 +15,9 @@ const Placement = () => {
     <section className="placement" id="placement">
       <div className="container">
         <div className="section-header" style={{ textAlign: 'center', marginTop: '40px', padding: '60px 0 40px 0' }}>
-          <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
+          <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '60px' }}>
             Placements
           </h2>
-          <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '60px' }}>
-            Coming Soon...
-          </p>
         </div>
 
         <div className="company-partners">

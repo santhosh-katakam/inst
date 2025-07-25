@@ -1,8 +1,43 @@
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import rcsLogo from '../assets/rcs_logo.png'
 // import InquiryForm from './components/InquiryForm';
 
 const Footer = () => {
+  const [blogs, setBlogs] = useState([])
+
+  // Load blogs from localStorage
+  useEffect(() => {
+    const savedBlogs = localStorage.getItem('rcs-blogs');
+    if (savedBlogs) {
+      const parsedBlogs = JSON.parse(savedBlogs);
+      setBlogs(parsedBlogs.slice(0, 3)); // Show only latest 3 blogs
+    } else {
+      // Default blogs if none exist
+      const defaultBlogs = [
+        {
+          id: 'java-interview-questions-2025',
+          title: 'Top 20 Java Interview Questions You Must Know in 2025',
+          date: 'Jun 20, 2025',
+          excerpt: 'Top 20 Java Interview Questions for 2025! Master core concepts, OOP, Java updates, multithreading...'
+        },
+        {
+          id: 'java-roadmap-beginners',
+          title: 'Complete Java Roadmap for Beginners to Advanced',
+          date: 'Jun 20, 2025',
+          excerpt: 'Master Java from basics to advanced: setup, OOP, collections, multithreading, JDBC, Spring, tools...'
+        },
+        {
+          id: 'seo-score-checker-tips',
+          title: 'SEO Score Checker: Improve Your Website with Actionable Tips',
+          date: 'Jun 04, 2025',
+          excerpt: 'Use our SEO Score Checker to analyze your website\'s performance and discover practical tips...'
+        }
+      ];
+      setBlogs(defaultBlogs);
+    }
+  }, [])
   const services = [
     'IT Training',
     'Online IT Training',
@@ -35,23 +70,7 @@ const Footer = () => {
     'List of Top IT Companies'
   ]
 
-  const blogs = [
-    {
-      title: 'Top 20 Java Interview Questions You Must Know in 2025',
-      date: 'Jun 20, 2025',
-      excerpt: 'Top 20 Java Interview Questions for 2025! Master core concepts, OOP, Java updates, multithreading...'
-    },
-    {
-      title: 'Complete Java Roadmap for Beginners to Advanced',
-      date: 'Jun 20, 2025',
-      excerpt: 'Master Java from basics to advanced: setup, OOP, collections, multithreading, JDBC, Spring, tools...'
-    },
-    {
-      title: 'SEO Score Checker: Improve Your Website with Actionable Tips',
-      date: 'Jun 04, 2025',
-      excerpt: 'Use our SEO Score Checker to analyze your website\'s performance and discover practical tips...'
-    }
-  ]
+
 
   return (
     <footer className="footer">
@@ -65,7 +84,7 @@ const Footer = () => {
                   <h4>{blog.title}</h4>
                   <p className="blog-date">{blog.date}</p>
                   <p className="blog-excerpt">{blog.excerpt}</p>
-                  <a href="#" className="blog-read-more">Read More</a>
+                  <Link to={`/blog/${blog.id}`} className="blog-read-more">Read More</Link>
                 </div>
               ))}
             </div>
