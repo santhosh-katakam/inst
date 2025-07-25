@@ -66,125 +66,125 @@ const Courses = () => {
       icon: '🐘', 
       duration: '3 months', 
       level: 'Beginner to Intermediate',
-      price: '₹18,000',
+      price: '10% discount',
       rating: 4.6,
       students: 890,
       description: 'Learn server-side programming with PHP and database management with MySQL.'
     },
-    
+
     // Mobile Development
-    { 
-      id: 'android', 
-      name: 'Android Development', 
+    {
+      id: 'android',
+      name: 'Android Development',
       category: 'mobile-development',
-      icon: '🤖', 
-      duration: '4 months', 
+      icon: '🤖',
+      duration: '4 months',
       level: 'Beginner to Advanced',
-      price: '₹28,000',
+      price: '10% discount',
       rating: 4.8,
       students: 650,
       description: 'Create native Android applications using Java/Kotlin and Android Studio.'
     },
-    { 
-      id: 'ios', 
-      name: 'iOS Development', 
+    {
+      id: 'ios',
+      name: 'iOS Development',
       category: 'mobile-development',
-      icon: '🍎', 
-      duration: '4 months', 
+      icon: '🍎',
+      duration: '4 months',
       level: 'Beginner to Advanced',
-      price: '₹32,000',
+      price: '10% discount',
       rating: 4.7,
       students: 420,
       description: 'Build iOS applications using Swift and Xcode development environment.'
     },
-    { 
-      id: 'flutter', 
-      name: 'Flutter Development', 
+    {
+      id: 'flutter',
+      name: 'Flutter Development',
       category: 'mobile-development',
-      icon: '🦋', 
-      duration: '3 months', 
+      icon: '🦋',
+      duration: '3 months',
       level: 'Intermediate',
-      price: '₹26,000',
+      price: '10% discount',
       rating: 4.8,
       students: 380,
       description: 'Develop cross-platform mobile apps using Google\'s Flutter framework.'
     },
     
     // Data Science
-    { 
-      id: 'data-science', 
-      name: 'Data Science Course', 
+    {
+      id: 'data-science',
+      name: 'Data Science Course',
       category: 'data-science',
-      icon: '📊', 
-      duration: '6 months', 
+      icon: '📊',
+      duration: '6 months',
       level: 'Intermediate to Advanced',
-      price: '₹45,000',
+      price: '10% discount',
       rating: 4.9,
       students: 520,
       description: 'Complete data science program covering Python, R, machine learning, and data visualization.'
     },
-    { 
-      id: 'machine-learning', 
-      name: 'Machine Learning Course', 
+    {
+      id: 'machine-learning',
+      name: 'Machine Learning Course',
       category: 'data-science',
-      icon: '🧠', 
-      duration: '4 months', 
+      icon: '🧠',
+      duration: '4 months',
       level: 'Advanced',
-      price: '₹38,000',
+      price: '10% discount',
       rating: 4.8,
       students: 340,
       description: 'Deep dive into machine learning algorithms, neural networks, and AI applications.'
     },
     
     // Design
-    { 
-      id: 'ui-ux', 
-      name: 'UI/UX Design Course', 
+    {
+      id: 'ui-ux',
+      name: 'UI/UX Design Course',
       category: 'design',
-      icon: '🎨', 
-      duration: '4 months', 
+      icon: '🎨',
+      duration: '4 months',
       level: 'Beginner to Advanced',
-      price: '₹24,000',
+      price: '10% discount',
       rating: 4.7,
       students: 680,
       description: 'Learn user interface and user experience design principles and tools.'
     },
-    { 
-      id: 'web-design', 
-      name: 'Web Design Course', 
+    {
+      id: 'web-design',
+      name: 'Web Design Course',
       category: 'design',
-      icon: '🌐', 
-      duration: '3 months', 
+      icon: '🌐',
+      duration: '3 months',
       level: 'Beginner',
-      price: '₹16,000',
+      price: '10% discount',
       rating: 4.6,
       students: 920,
       description: 'Master HTML, CSS, JavaScript, and responsive web design techniques.'
     },
     
     // Testing
-    { 
-      id: 'software-testing', 
-      name: 'Software Testing Course', 
+    {
+      id: 'software-testing',
+      name: 'Software Testing Course',
       category: 'testing',
-      icon: '🧪', 
-      duration: '3 months', 
+      icon: '🧪',
+      duration: '3 months',
       level: 'Beginner to Intermediate',
-      price: '₹20,000',
+      price: '10% discount',
       rating: 4.5,
       students: 560,
       description: 'Learn manual and automated testing techniques for software quality assurance.'
     },
-    
+
     // Digital Marketing
-    { 
-      id: 'digital-marketing', 
-      name: 'Digital Marketing Course', 
+    {
+      id: 'digital-marketing',
+      name: 'Digital Marketing Course',
       category: 'digital-marketing',
-      icon: '📢', 
-      duration: '3 months', 
+      icon: '📢',
+      duration: '3 months',
       level: 'Beginner to Advanced',
-      price: '₹22,000',
+      price: '10% discount',
       rating: 4.7,
       students: 780,
       description: 'Master SEO, SEM, social media marketing, and digital advertising strategies.'
