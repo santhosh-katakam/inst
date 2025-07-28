@@ -2,6 +2,11 @@ import { useState } from 'react'
 import './Testimonials.css'
 import rcsBi from '../assets/rcs_bi.png';
 import meImage from '../assets/me.png';
+import abhishekImage from '../assets/abhishekh.png';
+import ushaImage from '../assets/usha.png';
+import pottiImage from '../assets/potti.png';
+import pojithaImage from '../assets/pojitha.png';
+import hasiniImage from '../assets/hasini.png';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -17,35 +22,35 @@ const Testimonials = () => {
     {
       name: 'Abhishaik Sheik',
       role: 'Java Full Stack Developer',
-      image: '/testimonials/abhishaik.jpg',
+      image: abhishekImage,
       review: 'The instructions provided for the Java Full Stack topics are clear and cover the essential areas needed for a beginner to intermediate learner. The content explains both frontend and backend concepts, and the structure is logical — starting from core Java, moving to frameworks like Spring Boot, and including frontend technologies like HTML, CSS, JavaScript, and Angular/React.',
       rating: 5
     },
     {
       name: 'Usha Rani Dharavath',
       role: 'Software Developer',
-      image: '/testimonials/usha.jpg',
+      image: ushaImage,
       review: 'I am grateful to Real Code Synapse Institute, Khammam, for being the foundation of my career in software development. The training provided here was practical, industry-aligned, and focused heavily on hands-on learning, which gave me strong confidence in my skills.',
       rating: 5
     },
     {
       name: 'Potti Bhavya',
       role: 'Full Stack Java Developer',
-      image: '/testimonials/potti.jpg',
+      image: pottiImage,
       review: 'RCS\'s structured and practical approach to Full Stack Java development was very effective. The course covered everything from basics to deployment in a simple and clear manner.',
       rating: 5
     },
     {
       name: 'Pujitha Marikanti',
       role: 'Java Full Stack Developer',
-      image: '/testimonials/pujitha.jpg',
+      image: pojithaImage,
       review: 'I have completed java full stack training in realcode synapse. Here the faucality are real employees It was very good',
       rating: 5
     },
     {
       name: 'Upparapalli Hasini',
       role: 'Java Developer',
-      image: '/testimonials/hasini.jpg',
+      image: hasiniImage,
       review: 'I took JAVA course here at Realcodr institute. explanation, content, patience level in clearing doubts, everything is good. I strongly recommend this institution to buildup add-on skills along with your UG/PG',
       rating: 5
     }
