@@ -14,24 +14,24 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: 'Nupur Bhatt',
-      role: 'Software Tester',
-      image: '/testimonials/nupur.jpg',
-      review: 'I really liked the trainer\'s support in gaining knowledge and their delivery of practical things. It is a great learning experience with excellent placement support.',
+      name: 'Abhishaik Sheik',
+      role: 'Java Full Stack Developer',
+      image: '/testimonials/abhishaik.jpg',
+      review: 'The instructions provided for the Java Full Stack topics are clear and cover the essential areas needed for a beginner to intermediate learner. The content explains both frontend and backend concepts, and the structure is logical — starting from core Java, moving to frameworks like Spring Boot, and including frontend technologies like HTML, CSS, JavaScript, and Angular/React.',
       rating: 5
     },
     {
-      name: 'Viral Gajjar',
-      role: 'Data Analyst',
-      image: '/testimonials/viral.jpg',
-      review: 'Overall Training is good & enhance my knowledge in Python, SQL & Data Analysis Topics. Overall Good Experience with excellent faculty and placement assistance.',
+      name: 'Usha Rani Dharavath',
+      role: 'Software Developer',
+      image: '/testimonials/usha.jpg',
+      review: 'I am grateful to Real Code Synapse Institute, Khammam, for being the foundation of my career in software development. The training provided here was practical, industry-aligned, and focused heavily on hands-on learning, which gave me strong confidence in my skills.',
       rating: 5
     },
     {
-      name: 'Shruti Patel',
-      role: 'PHP Developer',
-      image: '/testimonials/shruti.jpg',
-      review: 'My Experience in RCS Institute was superb. I got proper guidance and training. The faculties were very helpful and supportive throughout the course.',
+      name: 'Potti Bhavya',
+      role: 'Full Stack Java Developer',
+      image: '/testimonials/potti.jpg',
+      review: 'RCS\'s structured and practical approach to Full Stack Java development was very effective. The course covered everything from basics to deployment in a simple and clear manner.',
       rating: 5
     },
     {
