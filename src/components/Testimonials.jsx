@@ -7,10 +7,10 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: 'Ravina Vajubhai Lathiya',
-      role: 'Software Tester',
-      image: '/testimonials/ravina.jpg',
-      review: 'I am a non-IT student and I\'ve been taking classes at TechInstitute for the past few months. Their faculty is excellent in gaining knowledge and their delivery of practical things. It is a great place to learn and grow.',
+      name: 'Santhosh Katakam',
+      role: 'Java Full Stack Developer',
+      image: '/testimonials/santhosh.jpg',
+      review: 'I have taken the Java Full Stack Developer training at RealCourse Synapse, and it was a great learning experience. The content was well-structured, and the trainers were very supportive and knowledgeable.',
       rating: 5
     },
     {
