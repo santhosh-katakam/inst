@@ -35,10 +35,10 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: 'Avi Mangukiya',
-      role: 'iOS Developer',
-      image: '/testimonials/avi.jpg',
-      review: 'I recently completed an internship with RCS Institute and it was a great learning experience. Great place for learning iOS development with hands-on projects.',
+      name: 'Pujitha Marikanti',
+      role: 'Java Full Stack Developer',
+      image: '/testimonials/pujitha.jpg',
+      review: 'I have completed java full stack training in realcode synapse. Here the faucality are real employees It was very good',
       rating: 5
     },
     {
