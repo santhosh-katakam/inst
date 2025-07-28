@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Testimonials.css'
 import rcsBi from '../assets/rcs_bi.png';
+import meImage from '../assets/me.png';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -9,7 +10,7 @@ const Testimonials = () => {
     {
       name: 'Santhosh Katakam',
       role: 'Java Full Stack Developer',
-      image: '/testimonials/santhosh.jpg',
+      image: meImage,
       review: 'I have taken the Java Full Stack Developer training at RealCourse Synapse, and it was a great learning experience. The content was well-structured, and the trainers were very supportive and knowledgeable.',
       rating: 5
     },
