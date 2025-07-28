@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Testimonials.css'
 import rcsBi from '../assets/rcs_bi.png';
+import rcsMuslim from '../assets/rcs_muslim.png';
 import meImage from '../assets/me.png';
 import abhishekImage from '../assets/abhishekh.png';
 import ushaImage from '../assets/usha.png';
@@ -58,7 +59,7 @@ const Testimonials = () => {
 
   const galleryImages = [
     { src: rcsBi, title: 'RCS', category: 'RCS' },
-    { src: rcsBi, title: 'RCS', category: 'RCS' }
+    { src: rcsMuslim, title: 'RCS', category: 'RCS' }
   ]
 
   const nextSlide = () => {
