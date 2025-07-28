@@ -50,7 +50,7 @@ const Hero = () => {
           <div className="hero-main">
             <div className="hero-text">
               <h1 className="hero-title">
-                Start Learning from Khammam&apos;s Best<br />
+                Start Learning from <span className="khammam-highlight">Khammam&apos;s</span> Best<br />
                 <span className="highlight">IT Training Company</span>
               </h1>
 

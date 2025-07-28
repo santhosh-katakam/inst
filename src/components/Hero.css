@@ -162,6 +162,33 @@
   display: block;
 }
 
+.khammam-highlight {
+  color: #ff6b35; /* Unique orange-red color */
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+  animation: zoomPulse 3s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: center;
+}
+
+@keyframes zoomPulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .hero-actions {
   display: flex;
   gap: 20px;
@@ -434,6 +461,10 @@
     font-size: 28px;
   }
 
+  .khammam-highlight {
+    font-size: 1.1em; /* Slightly larger on mobile */
+  }
+
   .hero-actions {
     justify-content: center;
     flex-wrap: wrap;
@@ -485,6 +516,10 @@
 @media (max-width: 480px) {
   .hero-title {
     font-size: 28px;
+  }
+
+  .khammam-highlight {
+    animation-duration: 2.5s; /* Slightly faster animation on mobile */
   }
 
   .years-badge {
