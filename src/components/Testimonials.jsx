@@ -42,10 +42,10 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: 'Om Sailor',
-      role: 'SEO Executive',
-      image: '/testimonials/om.jpg',
-      review: 'Wonderful experience with TechInstitute, I got a job within finished my course without any reference. Thank you TechInstitute for the excellent training.',
+      name: 'Upparapalli Hasini',
+      role: 'Java Developer',
+      image: '/testimonials/hasini.jpg',
+      review: 'I took JAVA course here at Realcodr institute. explanation, content, patience level in clearing doubts, everything is good. I strongly recommend this institution to buildup add-on skills along with your UG/PG',
       rating: 5
     }
   ]
