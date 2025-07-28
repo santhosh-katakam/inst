@@ -259,21 +259,7 @@ const BlogPost = () => {
 
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: blog.content }} />
 
-          <div className="blog-footer">
-            <div className="blog-tags">
-              <span className="tag">Java</span>
-              <span className="tag">Programming</span>
-              <span className="tag">Tutorial</span>
-            </div>
-            <div className="blog-share">
-              <h4>Share this article:</h4>
-              <div className="share-buttons">
-                <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(blog.title)}&url=${window.location.href}`} target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              </div>
-            </div>
-          </div>
+
         </article>
       </div>
     </div>
